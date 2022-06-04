@@ -1,2 +1,6 @@
-# scsys-contracts-ethereum
-Solidity Contracts written for EVM Compatible Blockchains
+# EVM Contracts
+
+
+## Getting Started
+
+    git clone https://github.com/scattered-systems/contracts.git
