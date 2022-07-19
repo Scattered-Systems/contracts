@@ -1,16 +1,14 @@
-FROM ubuntu as builder-base
+FROM photon as builder-base
 
-RUN apt-get update -y
+RUN yum update -y
 
-RUN apt-get install -y \
-    build-essential \
-    curl \
-    nodejs \
-    npm \
-    python3.10 \
-    yarn
+RUN yum install -y build-essential cmake nodejs npm yarn
+
 
 FROM builder-base as app
+
+ENV ETHERSCAN_API_KEY="sample"\
+    NETWORK_PORT=8545
 
 ADD . /app
 WORKDIR /app
@@ -18,6 +16,5 @@ WORKDIR /app
 COPY . .
 RUN npm install && npm run build
 
-EXPOSE 3000
-EXPOSE 7545
-EXPOSE 8545
+EXPOSE ${NETWORK_PORT}/tcp
+EXPOSE ${NETWORK_PORT}/udp

@@ -1,5 +1,5 @@
 {
-    "author": "FL03 <jo3mccain@icloud.com> (https://pzzld.eth.link/)",
+    "author": "FL03 <jo3mccain@icloud.com>",
     "dependencies": {
         "@openzeppelin/contracts": "^4.6.0",
         "@openzeppelin/contracts-upgradeable": "^4.6.0",
@@ -10,7 +10,7 @@
     },
     "description": "",
     "license": "MIT",
-    "name": "@project/contracts",
+    "name": "@scattered-systems/contracts",
     "repository": "https://github.com/scattered-systems/contracts.git",
     "scripts": {
         "build": "npm run truffle:compile",
@@ -19,6 +19,6 @@
         "truffle:compile": "npm run truffle compile",
         "truffle:deploy": "npm run truffle deploy"
     },
-    "url": "",
+    "url": "https://scattered-systems.github.io/contracts",
     "version": "0.1.0"
 }
