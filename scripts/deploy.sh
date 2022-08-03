@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-npm run truffle:compile
+npm run truffle:deploy

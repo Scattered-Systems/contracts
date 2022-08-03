@@ -3,14 +3,14 @@ require('dotenv').config()
 module.exports = {
   compilers: {
     solc: {
-      version: "^0.8.0"
+      version: "^0.8.15"
     }
   },
-  contracts_directory: './src/contracts',
+  contracts_directory: "./contracts",
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY
   },
-  migrations_directory: './src/migrations',
+  migrations_directory: "./migrations",
   networks: {
     development: {
       host: "127.0.0.1",

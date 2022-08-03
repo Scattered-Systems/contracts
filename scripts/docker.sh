@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-npm run truffle:compile
+docker build . --tag jo3mccain/contracts:next
+docker run jo3mccain/contracts:next
