@@ -21,7 +21,7 @@ contract ScatteredSystems is Initializable, ERC20Upgradeable, ERC20BurnableUpgra
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
-        _disableInitializers();
+        initialize();
     }
 
     function initialize() initializer public {

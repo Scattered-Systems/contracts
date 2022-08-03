@@ -7,6 +7,3 @@ import "./IERC721.sol";
 * @title ERC20
 * @dev https://eips.ethereum.org/eips/eip-721
 */
-contract ERC721 is IERC721 {
-
-}
